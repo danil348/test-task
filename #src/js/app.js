@@ -1,9 +1,5 @@
 @@include('files/script.js', {})
-//_card3d
-//_counter
-//_header_scroll
-//_icon_menu
-//_line
-//_scroll_animations
-//_scroll-1
-//_smoothscroll
+@@include('files/header_scroll.js', {})
+@@include('files/scroll_animations.js', {})
+@@include('files/icon_menu.js', {})
+@@include('files/smoothscroll.js', {})

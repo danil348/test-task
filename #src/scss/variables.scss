@@ -1,0 +1,30 @@
+//header
+$header-height: 82px;
+$header-height-mobile: 62px;
+$header-height-mobile-scroll: 60px;
+$header-bg-color: #ffffff;
+
+//fonts
+$fontFamilyRegular: 'CondProRegular';
+$fontFamilyMedium: 'CondProMedium';
+$fontFamilyBold: 'CondProBold';
+$fontSize: 16;
+
+//container
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1203;
+
+//брейкпоинты
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+//colors
+$mainColor: #5a1404;
+$yelow-1: #ffcd00;
+$yelow-1-hv: #ebbc00;
+
+$orange-1: #ecb200;
+$orange-2: #cf9b00;

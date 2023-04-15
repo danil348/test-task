@@ -35,8 +35,7 @@
 
 	&__decorations {
 		position: absolute;
-		&:nth-child(3) {
-			right: 0;
+		right: 0;
 			top: 0;
 			transform: translate(300%, 5%);
 			@media (max-width: $md1+px) {
@@ -48,8 +47,7 @@
 			@media (max-width: $md4+px) {
 				transform: translate(-116%, 216%);
 			}
-		}
-		&:nth-child(2) {
+		&-right{
 			left: 0;
 			top: 0;
 			transform: translate(-30%, -65%);

@@ -1,0 +1,115 @@
+:root {
+	--swiper-navigation-size: auto;
+}
+
+.promo {
+	padding: 66px 0;
+	&__title {
+		font-family: $fontFamilyMedium;
+		font-size: 36px;
+		line-height: 46px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__container {
+		padding: 0;
+		overflow: hidden;
+	}
+	.swiper {
+		display: flex;
+
+		margin-top: 40px;
+		padding-bottom: 50px;
+		width: 100%;
+		height: auto;
+	}
+	.swiper-wrapper {
+		overflow: visible;
+	}
+	.swiper-pagination-bullet {
+		width: 10px;
+		height: 10px;
+		transition: all 0.3s ease 0s;
+		border-radius: 100%;
+		background-color: $mainColor;
+		opacity: 1;
+		border: 1px solid $mainColor;
+	}
+	.swiper-pagination-bullet-active {
+		background-color: transparent;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		top: 40%;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+		@media (max-width:$md3+px){
+			 opacity: 0;
+			 visibility: hidden; 
+		}
+		&::after {
+			content: '';
+			height: 23px;
+			width: 23px;
+			transform: rotate(-135deg);
+			border-top: 6px solid $mainColor;
+			border-right: 6px solid $mainColor;
+		}
+	}
+	.swiper-button-prev {
+		&::after {
+			transform: rotate(-135deg);
+		}
+	}
+	.swiper-button-next {
+		&::after {
+			transform: rotate(45deg);
+		}
+	}
+	.swiper-pagination {
+		bottom: 0px;
+	}
+
+	.swiper-slide {
+		width: 300px;
+		// .swiper-slide__image
+		&__image {
+			&.small {
+				img {
+					transform: scale(1.1);
+				}
+			}
+			img {
+				will-change: transform;
+				width: 100%;
+				max-height: 277px;
+				max-width: 179px;
+			}
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		// .swiper-slide__info
+
+		&__info {
+			margin-top: 22px;
+			text-align: center;
+		}
+
+		// .swiper-slide__name
+
+		&__name {
+		}
+
+		// .swiper-slide__weight
+
+		&__weight {
+		}
+	}
+}

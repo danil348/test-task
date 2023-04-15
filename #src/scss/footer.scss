@@ -37,10 +37,11 @@
 		font-family: $fontFamilyMedium;
 		font-size: 36px;
 		line-height: 27px;
+		color: $red-2;
 		transition: all 0.3s ease 0s;
 		@media (any-hover: hover) {
 			&:hover {
-				opacity: 0.8;
+				color: $red-2-hv;
 			}
 		}
 	}

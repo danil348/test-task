@@ -29,6 +29,7 @@
 	// .gifts__container
 
 	&__container {
+		margin-top: 81px;
 		position: relative;
 	}
 
@@ -127,7 +128,6 @@
 
 	&__title {
 		@include adaptiv-value('font-size', 60, 34, 1);
-		margin-top: 81px;
 		font-family: $fontFamilyMedium;
 		text-transform: uppercase;
 		text-align: center;

@@ -3,3 +3,4 @@
 @@include('files/scroll_animations.js', {})
 @@include('files/icon_menu.js', {})
 @@include('files/smoothscroll.js', {})
+@@include('files/popup.js', {})

@@ -23,4 +23,5 @@ window.onload = function () {
 	scroll_animations()
 	icon_menu()
 	smoothscroll()
+	popup()
 }

@@ -9,12 +9,13 @@
 	height: 100%;
 	transition: visibility 0.8s ease 0s;
 	visibility: hidden;
-	&::before {
-		content: "";
+	&__shadow {
+		content: '';
 		background-color: rgba(0, 0, 0, 0.9);
 		position: fixed;
 		width: 100%;
 		height: 100%;
+		cursor: pointer;
 		top: 0;
 		left: 0;
 		opacity: 0;
@@ -23,7 +24,7 @@
 	&.show {
 		visibility: visible;
 		overflow: auto;
-		&::before {
+		.popup__shadow {
 			opacity: 1;
 		}
 		.popup__body {
@@ -33,7 +34,7 @@
 	&._active {
 		overflow: auto;
 		visibility: visible;
-		&::before {
+		.popup__shadow {
 			opacity: 1;
 		}
 		.popup__body {
@@ -64,13 +65,15 @@
 	}
 	// .popup__close
 	&__close {
-		width: 15px;
-		height: 15px;
+		width: 30px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		position: absolute;
-		top: 0px;
-		right: 0px;
+		top: 10px;
+		right: 10px;
 		cursor: pointer;
 		z-index: 30;
-		background: url("../img/icons/close.svg") 0 0 no-repeat;
 	}
 }

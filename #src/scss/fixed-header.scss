@@ -10,6 +10,7 @@ main {
 	top: 0;
 	left: 0;
 	width: 100%;
+
 	&__actions {
 		position: relative;
 		z-index: 100;
@@ -21,6 +22,7 @@ main {
 			font-family: 'CondProMedium';
 		}
 	}
+
 	&__buttonRegister {
 		position: relative;
 		@media (any-hover: hover) {
@@ -46,6 +48,7 @@ main {
 			width: 0%;
 		}
 	}
+
 	&__button {
 		border-radius: 29px;
 		background: $yelow-1;
@@ -64,6 +67,7 @@ main {
 		}
 		@media (max-width: $md3+px) {
 			padding: 6px 21px;
+			height: 32px;
 		}
 	}
 	// .header__wrapper
@@ -92,6 +96,7 @@ main {
 			transition: all 0.3s ease 0s;
 		}
 	}
+
 	&._scroll {
 		.header__body {
 			transition: all 0.3s ease 0s;
@@ -115,6 +120,7 @@ main {
 			padding-left: 14px;
 		}
 	}
+
 	// .header__logo
 
 	&__logo {
@@ -147,7 +153,9 @@ main {
 
 	&__menu {
 		flex: 1 1 auto;
+		padding-left: 36px;
 		@media (min-width: $md3+px) {
+			padding-left: 0px;
 			li {
 				z-index: 100;
 				position: relative;
@@ -155,9 +163,11 @@ main {
 		}
 		@media (max-width: $md3+px) {
 			flex: 0 0 auto;
+			padding-left: 0;
 		}
 	}
 }
+
 .menu {
 	// .menu__body
 
@@ -233,7 +243,7 @@ main {
 		flex-wrap: wrap;
 		display: flex;
 		justify-content: center;
-		gap: 83px;
+		gap: 81px;
 		align-items: center;
 		@media (max-width: $md2+px) {
 			gap: 53px;
@@ -272,12 +282,6 @@ main {
 	}
 }
 
-.menu {
-	// .menu__social
-
-	&__social {
-	}
-}
 .menu-social {
 	// .menu-social__text
 
@@ -300,6 +304,11 @@ main {
 	// .menu-social__icon
 
 	&__icon {
+		picture {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 		width: 32px;
 		cursor: pointer;
 		height: 32px;

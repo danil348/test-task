@@ -41,7 +41,7 @@ let path = {
 	src: {
 		favicon: src_folder + "/img/favicon.{jpg,png,svg,gif,ico,webp}",
 		html: [src_folder + "/**/*.html", "!" + src_folder + "/_*.html"],
-		js: [src_folder + "/js/app.js"],
+		js: src_folder + "/js/app.js",
 		css: src_folder + "/scss/style.scss",
 		images: [src_folder + "/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}", "!**/favicon.*"],
 		fonts: src_folder + "/fonts/*.ttf",
@@ -285,7 +285,7 @@ function htmlBuild() {
 						'key': '_v',
 						'value': '%DT%',
 						'cover': 1,
-						'files': ['app.min.js'] // Array [{String|Regex}] of explicit files to append to
+						'files': 'app.min.js' // Array [{String|Regex}] of explicit files to append to
 					}
 				]
 			},

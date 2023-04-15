@@ -10,7 +10,13 @@
 }
 
 body {
+	overflow-x: hidden;
 	scroll-behavior: smooth;
+}
+
+main {
+	position: relative;
+	overflow-x: hidden;
 }
 
 .wrapper {
@@ -38,12 +44,14 @@ body {
 		object-fit: cover;
 	}
 }
-
-@import 'footer';
-@import 'fixed-header';
-@import 'icon-menu';
-
-//<ОСНОВНОЙ БЛОК>====================================================================================================
 .page {
 	flex: 1 1 auto;
+	//overflow: hidden;
 }
+
+@import 'fixed-header';
+@import 'icon-menu';
+@import 'welcomeScreen.scss';
+@import 'gifts';
+
+@import 'footer';

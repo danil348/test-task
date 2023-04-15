@@ -1,0 +1,206 @@
+.welcomeScreen {
+	position: absolute;
+	width: 120%;
+	background: $yelow-1;
+	left: 50%;
+	top: 0;
+	min-width: 2116px;
+	transform: translate(-50%, -410px);
+	height: 1121px;
+	border-radius: 50%;
+	overflow: hidden;
+	z-index: 1;
+	filter: drop-shadow($yelow-1 0px 18px 0px);
+	&__images {
+		left: 50%;
+		transform: translate(-50%, 0);
+		max-width: 2116px;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	img {
+		//pointer-events: none;
+		z-index: 2;
+		position: absolute;
+		height: auto;
+	}
+	&__human {
+		bottom: 6%;
+		left: 30%;
+		width: 622px;
+	}
+	&__kitchen {
+		bottom: 0%;
+		left: 16%;
+		width: 899px;
+	}
+	&__cheese {
+		bottom: 28%;
+		left: 23%;
+		width: 561px;
+	}
+	&__card {
+		bottom: 0%;
+		left: 49%;
+		width: 613px;
+	}
+	&__prise {
+		bottom: 36%;
+		left: 68%;
+		width: 177px;
+	}
+	@media (max-width: $md1+px) {
+		transform: translate(-50%, -445px);
+		&__human {
+			width: 560px;
+			left: 38%;
+			bottom: 6%;
+		}
+		&__kitchen {
+			bottom: 0%;
+			left: 21%;
+			width: 799px;
+		}
+		&__cheese {
+			bottom: 28%;
+			left: 32%;
+			width: 484px;
+		}
+		&__card {
+			bottom: 0%;
+			left: 50%;
+			width: 441px;
+		}
+		&__prise {
+			bottom: 25%;
+			left: 64%;
+			width: 132px;
+		}
+	}
+	@media (max-width: $md2+px) {
+		transform: translate(-50%, -510px);
+		&__human {
+			width: 522px;
+			left: 38%;
+			bottom: 5%;
+		}
+		&__kitchen {
+			bottom: 0%;
+			left: 23%;
+			width: 726px;
+		}
+		&__cheese {
+			bottom: 24%;
+			left: 32%;
+			width: 461px;
+		}
+		&__card {
+			bottom: 0%;
+			left: 49%;
+			width: 443px;
+		}
+		&__prise {
+			bottom: 26%;
+			left: 62%;
+			width: 132px;
+		}
+	}
+	@media (max-width: $md3+px) {
+		transform: translate(-50%, -610px);
+		&__human {
+			width: 406px;
+			left: 41%;
+			bottom: 6%;
+		}
+		&__kitchen {
+			bottom: 0%;
+			left: 28%;
+			width: 636px;
+		}
+		&__cheese {
+			bottom: 21%;
+			left: 36%;
+			width: 361px;
+		}
+		&__card {
+			bottom: 0%;
+			left: 49%;
+			width: 343px;
+		}
+		&__prise {
+			bottom: 20%;
+			left: 59%;
+			width: 100px;
+		}
+	}
+	@media (max-width: 600px) {
+		transform: translate(-50%, -710px);
+		&__human {
+			width: 324px;
+			left: 43%;
+			bottom: 4%;
+		}
+		&__kitchen {
+			bottom: 0%;
+			left: 33%;
+			width: 466px;
+		}
+		&__cheese {
+			bottom: 16%;
+			left: 39%;
+			width: 296px;
+		}
+		&__card {
+			bottom: 0%;
+			left: 50%;
+			width: 263px;
+		}
+		&__prise {
+			bottom: 16%;
+			left: 57.7%;
+			width: 75px;
+		}
+	}
+	@media (max-width: $md4+px) {
+		transform: translate(-50%, -830px);
+		&__human {
+			width: 235px;
+			left: 45%;
+			bottom: 2.4%;
+		}
+		&__kitchen {
+			bottom: 0%;
+			left: 38%;
+			width: 332px;
+		}
+		&__cheese {
+			bottom: 11%;
+			left: 42.2%;
+			width: 208px;
+		}
+		&__card {
+			bottom: 0%;
+			left: 49.5%;
+			width: 201px;
+		}
+		&__prise {
+			bottom: 11%;
+			left: 55%;
+			width: 60px;
+		}
+	}
+
+	&__button {
+		position: absolute;
+		bottom: -10px;
+		left: 50%;
+		z-index: 4;
+		height: 50px;
+		color: red;
+		padding: 0 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

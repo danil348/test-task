@@ -48,9 +48,9 @@
 				opacity: 0.8;
 			}
 		}
-		@media (max-width:$md3+px){
-			 opacity: 0;
-			 visibility: hidden; 
+		@media (max-width: $md3+px) {
+			opacity: 0;
+			visibility: hidden;
 		}
 		&::after {
 			content: '';
@@ -105,11 +105,15 @@
 		// .swiper-slide__name
 
 		&__name {
+			font-size: 18px;
+			line-height: 22px;
 		}
 
 		// .swiper-slide__weight
 
 		&__weight {
+			font-size: 18px;
+			line-height: 22px;
 		}
 	}
 }

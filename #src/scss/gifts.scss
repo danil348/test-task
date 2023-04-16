@@ -36,24 +36,30 @@
 	&__decorations {
 		position: absolute;
 		right: 0;
-			top: 0;
-			transform: translate(300%, 5%);
-			@media (max-width: $md1+px) {
-				transform: translate(0%, 5%);
-			}
-			@media (max-width: $md3+px) {
-				transform: translate(0%, 100%);
-			}
-			@media (max-width: $md4+px) {
-				transform: translate(-116%, 216%);
-			}
-		&-right{
+		top: 0;
+		transform: translate(300%, 5%);
+		@media (max-width: $md1+px) {
+			transform: translate(0%, 5%);
+		}
+		@media (max-width: $md3+px) {
+			transform: translate(0%, 100%);
+		}
+		@media (max-width: $md4+px) {
+			transform: translate(-116%, 216%);
+		}
+		&-right {
 			left: 0;
 			top: 0;
 			transform: translate(-30%, -65%);
 			@media (max-width: $md4+px) {
 				transform: translate(22%, 42%) scale(0.7);
 			}
+		}
+		&-bottom {
+			bottom: 0;
+			left: 13%;
+			top: auto;
+			transform: translate(0, 180%);
 		}
 	}
 
